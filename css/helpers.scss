@@ -1,0 +1,76 @@
+/* FONTS */
+$montserrat: 'Montserrat', sans-serif;
+$fjalla: 'Fjalla One', sans-serif;
+
+
+/* COLORS */
+$theme-color: #7ba9ff;
+$black:#000;
+$white:#fff;
+
+/* BASICS */
+body{
+	font-family: $montserrat;
+	font-weight: 400;
+	font-size: 18px;
+	color: $white;
+	background-color: $black;
+}
+
+strong {font-weight: 900}
+video, img {max-width: 100%;}
+img {height: auto;}
+iframe {
+	max-width: 100%;
+}
+
+
+
+
+
+/* ARTICLE MAIN ELEMENTS */
+p {
+	line-height: 1.39;
+  	letter-spacing: normal;
+}
+
+a {
+	text-decoration:none;
+}
+
+.iframe-pixel, .ec_visit_pixel{display: none;}
+
+
+
+/* HELPERS */
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-uppercase {text-transform: uppercase;}
+
+.no-padding {padding:0;}
+.no-margin {margin: 0;}
+.block {display: block;}
+.thin {font-weight:400;}
+.bold {font-weight:700;}
+.extrabold {font-weight:900;}
+.font-small {font-size: 30px;}
+.font-big {font-size:66px;}
+
+
+/* CUSTOM */
+.color {color: $theme-color;}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    iframe {
+	    position: absolute;
+	    top:0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+}
